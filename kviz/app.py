@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session
 from flask_session import Session
 import pandas as pd
 import random
-import webbrowser
+#import webbrowser
 
 app = Flask(__name__)
 
@@ -35,5 +35,5 @@ def quiz():
     return render_template('quiz.html', question=current_question)
 
 if __name__ == '__main__':
-    webbrowser.open('http://localhost:5000')
+    #webbrowser.open('http://localhost:5000')
     app.run(debug=True)
